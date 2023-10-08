@@ -19,6 +19,7 @@
      font-family: 'Lato', sans-serif;
  }
 
+
  h1, h2, h3 {
      font-family: 'Oswald', sans-serif;
      text-transform: uppercase;
@@ -119,6 +120,13 @@
 #cover-text > h2, #cover-text > h3 {
     color:#ffffff
 }
+
+ #reasons {
+     width: 90%;
+     margin: 20px 0;
+
+     color: blue
+ }
 
  /* Footer */
  

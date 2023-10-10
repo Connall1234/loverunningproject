@@ -209,6 +209,19 @@
 
  }
 
+ /* Gallery page */
+
+ #photos img {
+    width:100%;
+    /*This makes the img alt text readable if the path breaks */
+    line-height: 1em;
+ }
+
+ #photos {
+    /*This stops the white line between imgs */
+    line-height: 0;
+ }
+
 
  /* Footer */
 
@@ -224,6 +237,15 @@
      font-size: 160%;
      padding: 5%;
      color: #3a3a3a
+ }
+
+ /* Media query: large or landscape phones (576px and up) */
+ @media screen and (min-width: 576px) {
+    /* This is to make the photos go in a column when the screen is enlarged, the gap is to stop the gap in photos." */
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
  }
 
  /* Media query: tablets and larger, (768px and up) */
@@ -289,7 +311,10 @@
          align-self: flex-end;
      }
 
-
+     /* Gallery */
+     #photos {
+        column-count: 3;
+     }
 
  }
 
@@ -300,6 +325,11 @@
          border-bottom: 1px solid #3a3a3a
      }
 
+     /* Gallery */
+     
+     #photos {
+        column-count: 4;
+     }
 
 
  }
